@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | Tau Gamma Phi Community Portal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar-top">
+      <div class="navbar-brand">
+        <img src="assets/logo.png" class="logo">
+        <div class="brand-text">
+          <span class="brand-title">Tau Gamma Phi</span>
+          <span class="brand-subtitle">Conception Chapter</span>
+        </div>
+      </div>
+
+      <div class="navbar-actions">
+        <a href="support.html" class="support-btn support-btn-mobile">Support us</a>
+        <a href="support.html" class="support-btn support-btn-desktop">Support us</a>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav-dropdown" id="navLinks">
+      <div class="nav-links-grid">
+        <a href="home.html#home">Home</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="home.html#about">About us</a>
+        <a href="home.html#programs">Programs</a>
+        <a href="home.html#events">Events</a>
+        <a href="home.html#announcements">Announcements</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="home.html#contact">Contact us</a>
+        <a href="profile.html" class="nav-link-full">Profile</a>
+      </div>
+
+      <button class="nav-toggle-chevron" id="chevronBtn" aria-label="Close navigation">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+    </nav>
+  </header>
+
+  <section class="profile-page" id="profilePage">
+    <div class="profile-top">
+      <button type="button" class="edit-profile-btn" id="editProfileBtn">Edit Profile</button>
+    </div>
+
+    <div class="profile-avatar-row">
+      <div class="profile-avatar"><i class="fa-solid fa-user"></i></div>
+    </div>
+
+    <h1 class="profile-name">Juan Dela Cruz</h1>
+    <p class="profile-since">Member since March 2026</p>
+
+    <div class="profile-fields">
+      <div class="profile-field">
+        <span class="field-label">Username</span>
+        <span class="field-value" data-value="Juan Dela Cruz">Juan Dela Cruz</span>
+        <input type="text" class="field-input" value="Juan Dela Cruz" hidden>
+        <button type="button" class="field-edit-icon"><i class="fa-solid fa-pen-to-square"></i></button>
+      </div>
+
+      <div class="profile-field">
+        <span class="field-label">Password</span>
+        <span class="field-value" data-value="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">••••••••••••••••</span>
+        <input type="password" class="field-input" placeholder="Enter new password" hidden>
+        <button type="button" class="field-edit-icon"><i class="fa-solid fa-pen-to-square"></i></button>
+      </div>
+
+      <div class="profile-field">
+        <span class="field-label">Email</span>
+        <span class="field-value" data-value="Juan@gmail.com">Juan@gmail.com</span>
+        <input type="email" class="field-input" value="Juan@gmail.com" hidden>
+        <button type="button" class="field-edit-icon"><i class="fa-solid fa-pen-to-square"></i></button>
+      </div>
+
+      <div class="profile-field">
+        <span class="field-label">Phone</span>
+        <span class="field-value" data-value="0962952517985">0962952517985</span>
+        <input type="tel" class="field-input" value="0962952517985" hidden>
+        <button type="button" class="field-edit-icon"><i class="fa-solid fa-pen-to-square"></i></button>
+      </div>
+
+      <div class="profile-field">
+        <span class="field-label">Member ID</span>
+        <span class="field-value">000-000-001</span>
+      </div>
+
+      <div class="profile-field">
+        <span class="field-label">Birth</span>
+        <span class="field-value" data-value="2/10/2005">2/10/2005</span>
+        <input type="text" class="field-input" value="2/10/2005" hidden>
+        <button type="button" class="field-edit-icon"><i class="fa-solid fa-pen-to-square"></i></button>
+      </div>
+
+      <div class="profile-field">
+        <span class="field-label">Gender</span>
+        <span class="field-value" data-value="Male">Male</span>
+        <input type="text" class="field-input" value="Male" hidden>
+        <button type="button" class="field-edit-icon"><i class="fa-solid fa-pen-to-square"></i></button>
+      </div>
+    </div>
+
+    <button type="button" class="logout-btn" id="logoutBtn">Log Out</button>
+    <button type="button" class="save-btn" id="saveBtn" hidden>Save</button>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Tau Gamma Phi Fraternity. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="auth.js"></script>
+  <script defer src="profile.js"></script>
+</body>
+</html>
